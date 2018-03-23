@@ -1,0 +1,172 @@
+EESchema Schematic File Version 2
+LIBS:イルミネーション-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:イルミネーション-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L UM66TxxL U?
+U 1 1 594CDC0F
+P 4600 3200
+F 0 "U?" H 4600 3350 60  0000 C CNN
+F 1 "UM66TxxL" H 4650 3450 60  0000 C CNN
+F 2 "" H 4600 3200 60  0000 C CNN
+F 3 "" H 4600 3200 60  0000 C CNN
+	1    4600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery-RESCUE-イルミネーション BT?
+U 1 1 594CDC4E
+P 3000 3600
+F 0 "BT?" H 3100 3650 50  0000 L CNN
+F 1 "Battery" H 3100 3550 50  0000 L CNN
+F 2 "" V 3000 3640 50  0000 C CNN
+F 3 "" V 3000 3640 50  0000 C CNN
+	1    3000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SWITCH_INV SW?
+U 1 1 594CDCCD
+P 3500 3100
+F 0 "SW?" H 3300 3250 50  0000 C CNN
+F 1 "SWITCH_INV" H 3350 2950 50  0000 C CNN
+F 2 "" H 3500 3100 50  0000 C CNN
+F 3 "" H 3500 3100 50  0000 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2450 3000 3450
+Wire Wire Line
+	4000 3200 4200 3200
+NoConn ~ 4000 3000
+Wire Wire Line
+	4600 3600 4600 3850
+Wire Wire Line
+	3000 3850 5850 3850
+Wire Wire Line
+	3000 3850 3000 3750
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 594CDDBC
+P 5750 3200
+F 0 "Q?" H 6050 3250 50  0000 R CNN
+F 1 "Q_NPN_BCE" H 6350 3150 50  0000 R CNN
+F 2 "" H 5950 3300 50  0000 C CNN
+F 3 "" H 5750 3200 50  0000 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 594CDE39
+P 5300 3200
+F 0 "R?" V 5380 3200 50  0000 C CNN
+F 1 "R" V 5300 3200 50  0000 C CNN
+F 2 "" V 5230 3200 50  0000 C CNN
+F 3 "" H 5300 3200 50  0000 C CNN
+	1    5300 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3200 5450 3200
+Wire Wire Line
+	5150 3200 5000 3200
+$Comp
+L SPEAKER SP?
+U 1 1 594CDF18
+P 6150 2550
+F 0 "SP?" H 6050 2800 50  0000 C CNN
+F 1 "SPEAKER" H 6050 2300 50  0000 C CNN
+F 2 "" H 6150 2550 50  0000 C CNN
+F 3 "" H 6150 2550 50  0000 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2650 5850 3000
+Wire Wire Line
+	5850 2450 3000 2450
+Connection ~ 3000 3100
+Wire Wire Line
+	5850 3850 5850 3400
+Connection ~ 4600 3850
+$Comp
+L CDT3460 U?
+U 1 1 594CE360
+P 3900 4750
+F 0 "U?" H 3900 4550 60  0000 C CNN
+F 1 "CDT3460" H 3900 4950 60  0000 C CNN
+F 2 "" H 3900 4750 60  0000 C CNN
+F 3 "" H 3900 4750 60  0000 C CNN
+	1    3900 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 5050 4150 4850
+Wire Wire Line
+	3500 5050 4150 5050
+Wire Wire Line
+	3500 5050 3500 3450
+Wire Wire Line
+	3500 3450 4100 3450
+Wire Wire Line
+	4100 3450 4100 3200
+Connection ~ 4100 3200
+Wire Wire Line
+	4150 4650 4150 3850
+Connection ~ 4150 3850
+$Comp
+L LED-RESCUE-イルミネーション D?
+U 1 1 594CECC5
+P 4550 4750
+F 0 "D?" H 4550 4850 50  0000 C CNN
+F 1 "LED" H 4550 4650 50  0000 C CNN
+F 2 "" H 4550 4750 50  0000 C CNN
+F 3 "" H 4550 4750 50  0000 C CNN
+	1    4550 4750
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

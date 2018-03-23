@@ -1,0 +1,253 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mylib
+LIBS:LEDcandle_rev0B-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LEDcandle"
+Date "2016-06-25"
+Rev "0B"
+Comp "JA1YDU"
+Comment1 "rikougaku"
+Comment2 "Use CDT3460"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CDT3460 U1
+U 1 1 576DEB00
+P 5400 3850
+F 0 "U1" H 5400 3650 60  0000 C CNN
+F 1 "CDT3460" H 5400 4050 60  0000 C CNN
+F 2 "mylib:CDT3460" H 5400 3850 60  0001 C CNN
+F 3 "" H 5400 3850 60  0000 C CNN
+	1    5400 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 576DEBF7
+P 5750 4200
+F 0 "R1" V 5830 4200 50  0000 C CNN
+F 1 "100k" V 5750 4200 50  0000 C CNN
+F 2 "mylib:Rdenkensize" V 5680 4200 50  0001 C CNN
+F 3 "" H 5750 4200 50  0000 C CNN
+	1    5750 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 576DECD2
+P 6250 4200
+F 0 "R2" V 6330 4200 50  0000 C CNN
+F 1 "1k" V 6250 4200 50  0000 C CNN
+F 2 "mylib:Rdenkensize" V 6180 4200 50  0001 C CNN
+F 3 "" H 6250 4200 50  0000 C CNN
+	1    6250 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L CP C1
+U 1 1 576DECFB
+P 6000 4450
+F 0 "C1" H 6025 4550 50  0000 L CNN
+F 1 "33u" H 6025 4350 50  0000 L CNN
+F 2 "mylib:CP3mm" H 6038 4300 50  0001 C CNN
+F 3 "" H 6000 4450 50  0000 C CNN
+	1    6000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_ECB Q1
+U 1 1 576DEDEE
+P 6800 4200
+F 0 "Q1" H 7100 4250 50  0000 R CNN
+F 1 "2SC1815" H 7300 4150 50  0000 R CNN
+F 2 "mylib:TO-92transistor" H 7000 4300 50  0001 C CNN
+F 3 "" H 6800 4200 50  0000 C CNN
+	1    6800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 576DEE1F
+P 6900 3750
+F 0 "R3" V 6980 3750 50  0000 C CNN
+F 1 "47" V 6900 3750 50  0000 C CNN
+F 2 "mylib:Rdenkensize" V 6830 3750 50  0001 C CNN
+F 3 "" H 6900 3750 50  0000 C CNN
+	1    6900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 576DEE5E
+P 6900 3300
+F 0 "D2" H 6900 3400 50  0000 C CNN
+F 1 "LED" H 6900 3200 50  0000 C CNN
+F 2 "mylib:LED3mm" H 6900 3300 50  0001 C CNN
+F 3 "" H 6900 3300 50  0000 C CNN
+	1    6900 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 576DEE90
+P 6550 3300
+F 0 "D1" H 6550 3400 50  0000 C CNN
+F 1 "LED" H 6550 3200 50  0000 C CNN
+F 2 "mylib:LED3mm" H 6550 3300 50  0001 C CNN
+F 3 "" H 6550 3300 50  0000 C CNN
+	1    6550 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 3500 6900 3600
+Wire Wire Line
+	6550 3500 6550 3550
+Wire Wire Line
+	6550 3550 6900 3550
+Connection ~ 6900 3550
+Wire Wire Line
+	6900 3900 6900 4000
+Wire Wire Line
+	6600 4200 6400 4200
+Wire Wire Line
+	6100 4200 5900 4200
+Wire Wire Line
+	6000 4300 6000 4200
+Connection ~ 6000 4200
+Wire Wire Line
+	5600 4200 5400 4200
+Wire Wire Line
+	5400 4200 5400 4100
+Wire Wire Line
+	6900 4700 6900 4400
+Wire Wire Line
+	4600 4700 6900 4700
+Wire Wire Line
+	6000 4700 6000 4600
+Wire Wire Line
+	5500 4100 5500 4800
+Connection ~ 6000 4700
+Wire Wire Line
+	5300 4100 5300 4200
+Wire Wire Line
+	5300 4200 5100 4200
+Wire Wire Line
+	5100 4200 5100 3000
+Wire Wire Line
+	4500 3000 6900 3000
+Wire Wire Line
+	6550 3000 6550 3100
+Wire Wire Line
+	6900 3000 6900 3100
+Connection ~ 6550 3000
+$Comp
+L SWITCH_INV SW1
+U 1 1 576DF025
+P 4600 3550
+F 0 "SW1" H 4400 3700 50  0000 C CNN
+F 1 "SWITCH_INV" H 4450 3400 50  0000 C CNN
+F 2 "mylib:SS12D07-NL" H 4600 3550 50  0001 C CNN
+F 3 "" H 4600 3550 50  0000 C CNN
+	1    4600 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3000 4500 3050
+Connection ~ 5100 3000
+NoConn ~ 4700 3050
+$Comp
+L Battery BT1
+U 1 1 576DF25E
+P 4600 4300
+F 0 "BT1" H 4700 4350 50  0000 L CNN
+F 1 "CR2032" H 4700 4250 50  0000 L CNN
+F 2 "mylib:BS2032-C" V 4600 4340 50  0001 C CNN
+F 3 "" V 4600 4340 50  0000 C CNN
+	1    4600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4050 4600 4150
+Wire Wire Line
+	4600 4450 4600 4700
+Connection ~ 5500 4700
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 576E06F1
+P 7550 3700
+F 0 "#FLG01" H 7550 3795 50  0001 C CNN
+F 1 "PWR_FLAG" H 7550 3880 50  0000 C CNN
+F 2 "" H 7550 3700 50  0000 C CNN
+F 3 "" H 7550 3700 50  0000 C CNN
+	1    7550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 576E0719
+P 7550 3800
+F 0 "#PWR02" H 7550 3550 50  0001 C CNN
+F 1 "GND" H 7550 3650 50  0000 C CNN
+F 2 "" H 7550 3800 50  0000 C CNN
+F 3 "" H 7550 3800 50  0000 C CNN
+	1    7550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 576E09AD
+P 5500 4800
+F 0 "#PWR03" H 5500 4550 50  0001 C CNN
+F 1 "GND" H 5500 4650 50  0000 C CNN
+F 2 "" H 5500 4800 50  0000 C CNN
+F 3 "" H 5500 4800 50  0000 C CNN
+	1    5500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3800 7550 3700
+Wire Notes Line
+	7350 3450 7750 3450
+Wire Notes Line
+	7750 3450 7750 4000
+Wire Notes Line
+	7750 4000 7350 4000
+Wire Notes Line
+	7350 4000 7350 3450
+Text Notes 7400 4100 0    60   ~ 0
+For ERC
+$EndSCHEMATC

@@ -1,0 +1,513 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:denken
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "stylus piano"
+Date "2016-10-20"
+Rev "0A"
+Comp "JA1YDU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R3
+U 1 1 57FDCEB6
+P 4050 4500
+F 0 "R3" V 4130 4500 50  0000 C CNN
+F 1 "4k7" V 4050 4500 50  0000 C CNN
+F 2 "Denken:R_H_5" V 3980 4500 50  0001 C CNN
+F 3 "" H 4050 4500 50  0000 C CNN
+	1    4050 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 57FDCF0E
+P 4500 3850
+F 0 "R5" V 4580 3850 50  0000 C CNN
+F 1 "470" V 4500 3850 50  0000 C CNN
+F 2 "Denken:R_V_3" V 4430 3850 50  0001 C CNN
+F 3 "" H 4500 3850 50  0000 C CNN
+	1    4500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 57FDD016
+P 3700 5000
+F 0 "R2" V 3780 5000 50  0000 C CNN
+F 1 "3k3" V 3700 5000 50  0000 C CNN
+F 2 "Denken:R_H_5" V 3630 5000 50  0001 C CNN
+F 3 "" H 3700 5000 50  0000 C CNN
+	1    3700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 57FDED2F
+P 4500 5200
+F 0 "C1" H 4525 5300 50  0000 L CNN
+F 1 "0.047u" H 4525 5100 50  0000 L CNN
+F 2 "mylib:CP" H 4538 5050 50  0001 C CNN
+F 3 "" H 4500 5200 50  0000 C CNN
+	1    4500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPEAKER SP1
+U 1 1 57FDF424
+P 6550 5200
+F 0 "SP1" H 6600 5450 50  0000 C CNN
+F 1 "SPEAKER" H 6450 4950 50  0000 C CNN
+F 2 "mylib:Speaker" H 6550 5200 50  0001 C CNN
+F 3 "" H 6550 5200 50  0000 C CNN
+	1    6550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 57FDF6D6
+P 6250 4850
+F 0 "C2" H 6275 4950 50  0000 L CNN
+F 1 "0.1u" H 6275 4750 50  0000 L CNN
+F 2 "mylib:CP" H 6288 4700 50  0001 C CNN
+F 3 "" H 6250 4850 50  0000 C CNN
+	1    6250 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 57FE0CFB
+P 3700 4000
+F 0 "R1" V 3780 4000 50  0000 C CNN
+F 1 "1k" V 3700 4000 50  0000 C CNN
+F 2 "Denken:R_H_5" V 3630 4000 50  0001 C CNN
+F 3 "" H 3700 4000 50  0000 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 57FE0D55
+P 4500 3350
+F 0 "R4" V 4580 3350 50  0000 C CNN
+F 1 "6k8" V 4500 3350 50  0000 C CNN
+F 2 "Denken:R_V_3" V 4430 3350 50  0001 C CNN
+F 3 "" H 4500 3350 50  0000 C CNN
+	1    4500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 57FE108C
+P 7100 2900
+F 0 "R7" V 7200 2900 50  0000 C CNN
+F 1 "1k" V 7100 2900 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 2900 50  0001 C CNN
+F 3 "" H 7100 2900 50  0000 C CNN
+	1    7100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 57FE1186
+P 7100 3350
+F 0 "R8" V 7200 3350 50  0000 C CNN
+F 1 "1k" V 7100 3350 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 3350 50  0001 C CNN
+F 3 "" H 7100 3350 50  0000 C CNN
+	1    7100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 57FE11CF
+P 7100 3800
+F 0 "R9" V 7200 3800 50  0000 C CNN
+F 1 "1k2" V 7100 3800 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 3800 50  0001 C CNN
+F 3 "" H 7100 3800 50  0000 C CNN
+	1    7100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 57FE128B
+P 7100 4250
+F 0 "R10" V 7200 4250 50  0000 C CNN
+F 1 "680" V 7100 4250 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 4250 50  0001 C CNN
+F 3 "" H 7100 4250 50  0000 C CNN
+	1    7100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 57FE13D2
+P 7100 4700
+F 0 "R11" V 7200 4700 50  0000 C CNN
+F 1 "1k5" V 7100 4700 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 4700 50  0001 C CNN
+F 3 "" H 7100 4700 50  0000 C CNN
+	1    7100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 57FE142A
+P 7100 5150
+F 0 "R12" V 7200 5150 50  0000 C CNN
+F 1 "1k5" V 7100 5150 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 5150 50  0001 C CNN
+F 3 "" H 7100 5150 50  0000 C CNN
+	1    7100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 57FE1F25
+P 7100 2450
+F 0 "R6" V 7200 2450 50  0000 C CNN
+F 1 "200" V 7100 2450 50  0000 C CNN
+F 2 "Denken:R_V_3" V 7030 2450 50  0001 C CNN
+F 3 "" H 7100 2450 50  0000 C CNN
+	1    7100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4500 3850 4500
+Wire Wire Line
+	3700 4150 3700 4250
+Wire Wire Line
+	3700 4750 3700 4850
+Wire Wire Line
+	5500 3600 5500 4100
+Wire Wire Line
+	6250 5000 6250 5100
+Wire Wire Line
+	6250 5550 6250 5300
+Wire Wire Line
+	4500 4000 4500 5050
+Wire Wire Line
+	6000 4250 6700 4250
+Wire Wire Line
+	4500 3500 4500 3700
+Wire Wire Line
+	7100 2600 7100 2750
+Wire Wire Line
+	7100 3500 7100 3650
+Wire Wire Line
+	7100 3050 7100 3200
+Wire Wire Line
+	7100 3950 7100 4100
+Wire Wire Line
+	7100 4400 7100 4550
+Wire Wire Line
+	7100 4850 7100 5000
+Wire Wire Line
+	7100 2300 7100 2150
+Wire Wire Line
+	7100 2150 4500 2150
+Wire Wire Line
+	4500 2150 4500 3200
+Wire Wire Line
+	7100 5300 7100 5400
+Connection ~ 7100 2250
+Connection ~ 7100 2700
+Connection ~ 7100 3150
+Connection ~ 7100 3600
+Connection ~ 7100 4050
+Connection ~ 7100 4500
+Connection ~ 7100 4950
+Wire Wire Line
+	4500 5350 4500 5550
+Wire Wire Line
+	2900 5550 6250 5550
+Wire Wire Line
+	3100 4500 3100 5550
+Connection ~ 5500 5550
+Connection ~ 4500 5550
+Connection ~ 3700 5550
+Wire Wire Line
+	5500 3600 3100 3600
+Wire Wire Line
+	3100 3500 3100 4200
+NoConn ~ 6000 4500
+Wire Wire Line
+	6250 4250 6250 4700
+Connection ~ 6250 4250
+Wire Wire Line
+	6050 5000 4500 5000
+Wire Wire Line
+	6050 4700 6050 5000
+Connection ~ 4500 5000
+Wire Wire Line
+	5500 4900 5500 5550
+Wire Wire Line
+	4800 3600 4800 4750
+Wire Wire Line
+	4800 4750 5000 4750
+Connection ~ 4800 3600
+Wire Wire Line
+	3700 3600 3700 3850
+Connection ~ 3700 3600
+Wire Wire Line
+	4200 4500 5000 4500
+Wire Wire Line
+	4500 4250 5000 4250
+Connection ~ 4500 4250
+Wire Wire Line
+	3700 5150 3700 5550
+$Comp
+L CONN_01X01 P3
+U 1 1 58EE08C5
+P 8575 4600
+F 0 "P3" H 8575 4700 50  0000 C CNN
+F 1 "CONN_01X01" V 8675 4600 50  0000 C CNN
+F 2 "mylib:holepin" H 8575 4600 50  0001 C CNN
+F 3 "" H 8575 4600 50  0000 C CNN
+	1    8575 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P2
+U 1 1 58EE09E3
+P 8575 3925
+F 0 "P2" H 8575 4025 50  0000 C CNN
+F 1 "CONN_01X01" V 8675 3925 50  0000 C CNN
+F 2 "mylib:holepin" H 8575 3925 50  0001 C CNN
+F 3 "" H 8575 3925 50  0000 C CNN
+	1    8575 3925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8575 4125 8575 4400
+Wire Notes Line
+	8300 3750 8850 3750
+Wire Notes Line
+	8850 3750 8850 4750
+Wire Notes Line
+	8850 4750 8300 4750
+Wire Notes Line
+	8300 4750 8300 3750
+Text Notes 8325 3725 0    60   ~ 0
+Stylus pen
+$Comp
+L POT RV1
+U 1 1 58F48DAC
+P 3700 4500
+F 0 "RV1" H 3700 4400 50  0000 C CNN
+F 1 "POT" H 3700 4500 50  0000 C CNN
+F 2 "mylib:pod" H 3700 4500 50  0001 C CNN
+F 3 "" H 3700 4500 50  0000 C CNN
+	1    3700 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 58F49293
+P 3100 4350
+F 0 "BT1" H 3200 4400 50  0000 L CNN
+F 1 "Battery" H 3200 4300 50  0000 L CNN
+F 2 "Denken:BH-321-1P24" V 3100 4390 50  0001 C CNN
+F 3 "" V 3100 4390 50  0000 C CNN
+	1    3100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM555N U1
+U 1 1 58F49A2A
+P 5500 4500
+F 0 "U1" H 5100 4850 50  0000 L CNN
+F 1 "LM555N" H 5100 4150 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5500 4500 50  0001 C CNN
+F 3 "" H 5500 4500 50  0000 C CNN
+	1    5500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4700 6000 4700
+Wire Wire Line
+	6000 4300 6000 4250
+Wire Wire Line
+	5000 4750 5000 4700
+Wire Wire Line
+	5000 4250 5000 4300
+$Comp
+L keybord P4
+U 1 1 58F4A897
+P 7500 2250
+F 0 "P4" H 7750 2100 60  0000 C CNN
+F 1 "C7" H 7750 2400 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 2250 60  0001 C CNN
+F 3 "" H 7650 2250 60  0000 C CNN
+	1    7500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P5
+U 1 1 58F4AA7D
+P 7500 2700
+F 0 "P5" H 7750 2550 60  0000 C CNN
+F 1 "B6" H 7750 2850 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 2700 60  0001 C CNN
+F 3 "" H 7650 2700 60  0000 C CNN
+	1    7500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P6
+U 1 1 58F4AAEF
+P 7500 3150
+F 0 "P6" H 7750 3000 60  0000 C CNN
+F 1 "A6" H 7750 3300 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 3150 60  0001 C CNN
+F 3 "" H 7650 3150 60  0000 C CNN
+	1    7500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P7
+U 1 1 58F4AF36
+P 7500 3600
+F 0 "P7" H 7750 3450 60  0000 C CNN
+F 1 "G6" H 7750 3750 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 3600 60  0001 C CNN
+F 3 "" H 7650 3600 60  0000 C CNN
+	1    7500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P8
+U 1 1 58F4AFB2
+P 7500 4050
+F 0 "P8" H 7750 3900 60  0000 C CNN
+F 1 "F6" H 7750 4200 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 4050 60  0001 C CNN
+F 3 "" H 7650 4050 60  0000 C CNN
+	1    7500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P9
+U 1 1 58F4B33C
+P 7500 4500
+F 0 "P9" H 7750 4350 60  0000 C CNN
+F 1 "E6" H 7750 4650 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 4500 60  0001 C CNN
+F 3 "" H 7650 4500 60  0000 C CNN
+	1    7500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P10
+U 1 1 58F4B500
+P 7500 4950
+F 0 "P10" H 7750 4800 60  0000 C CNN
+F 1 "D6" H 7750 5100 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 4950 60  0001 C CNN
+F 3 "" H 7650 4950 60  0000 C CNN
+	1    7500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L keybord P11
+U 1 1 58F4B57D
+P 7500 5400
+F 0 "P11" H 7750 5250 60  0000 C CNN
+F 1 "C6" H 7750 5550 60  0000 C CNN
+F 2 "Denken:keybord_1" H 7650 5400 60  0001 C CNN
+F 3 "" H 7650 5400 60  0000 C CNN
+	1    7500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5400 7300 5400
+Wire Wire Line
+	7100 4950 7300 4950
+Wire Wire Line
+	7100 4500 7300 4500
+Wire Wire Line
+	7300 4050 7100 4050
+Wire Wire Line
+	7100 3600 7300 3600
+Wire Wire Line
+	7300 3150 7100 3150
+Wire Wire Line
+	7100 2700 7300 2700
+Wire Wire Line
+	7100 2250 7300 2250
+$Comp
+L stylus_pen P1
+U 1 1 58F4ED3E
+P 6700 3950
+F 0 "P1" H 7100 3850 60  0000 C CNN
+F 1 "stylus_pen" H 7050 4050 60  0000 C CNN
+F 2 "mylib:holepin" H 6700 3950 60  0001 C CNN
+F 3 "" H 6700 3950 60  0000 C CNN
+	1    6700 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 4250 6700 4150
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 58F4F719
+P 3100 3500
+F 0 "#FLG01" H 3100 3595 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 3680 50  0000 C CNN
+F 2 "" H 3100 3500 50  0000 C CNN
+F 3 "" H 3100 3500 50  0000 C CNN
+	1    3100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 58F4F952
+P 2900 5425
+F 0 "#FLG02" H 2900 5520 50  0001 C CNN
+F 1 "PWR_FLAG" H 2900 5605 50  0000 C CNN
+F 2 "" H 2900 5425 50  0000 C CNN
+F 3 "" H 2900 5425 50  0000 C CNN
+	1    2900 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5550 2900 5425
+Connection ~ 3100 5550
+Connection ~ 3100 3600
+$EndSCHEMATC

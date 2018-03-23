@@ -1,0 +1,8 @@
+Qty,partname,description,lib
+0,"Battery","","device"
+0,"CDT3460","","mylib"
+0,"CP","Polarised capacitor","device"
+0,"LED","","device"
+0,"Q_NPN_ECB","Transistor NPN (general)","device"
+0,"R","Resistor","device"
+0,"SWITCH_INV","inverseur","device"
